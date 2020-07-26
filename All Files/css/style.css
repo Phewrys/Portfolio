@@ -262,6 +262,7 @@ section#about img {
     transition: 1s ease-in-out;
     color: #00fff3 !important;
     border: 1px solid #00fff3!important;
+    font-size: 18px;
 }
   
 svg {
@@ -454,8 +455,6 @@ section#contact span:hover {
 }
 
 .btn {
-    background: #AAAAAA;
-    color: #1b1b1b !important;
     border-radius: 0px !important;
     font-family: 'Roboto', sans-serif;
 }
