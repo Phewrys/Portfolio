@@ -91,14 +91,25 @@
                         <img class="rounded-circle" src="imgs\phewrys.png" class="/img-fluid" alt="Photo Tiago Alves">
                     </div>
                     <div>
-                        <div class="py-3">
-                            <p class="text-center font-weight-bold">TIAGO ALVES</p>
-                            <a class="btn bg-secondary" href="CV.pdf" download="CV - Tiago Alves de Farias"><span
-                                    class="fa fa-download"></span><span>&nbsp;&nbsp;Download CV</span></a>
+                        <div aboutBtn class="py-3">
+                            <div class="pb-5 mb-5">
+                                <p class="text-center font-weight-bold">TIAGO ALVES</p>
+                            </div>
+                            <div class="center">
+                                <a href="CV.pdf" download="CV - Tiago Alves de Farias">
+                                    <button class="btn" btn>
+                                        <svg viewBox="0 0 180 60">
+                                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                                        </svg>
+                                        <span class="fa fa-download"></span><span>&nbsp;&nbsp;Download CV</span>
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="no-padding col-lg-8 col-md-8 col-xs-12"  data-anime="top">
+                <div class="no-padding col-lg-8 col-md-8 col-xs-12" data-anime="top">
                     <h2>{ About };</h2>
                     <p class="text-justify">Graduando do curso Bacharelado em <span text-color>Sistemas de
                             Informação</span> pela <span text-color>Universidade Federal de Sergipe</span> (UFS).
@@ -117,13 +128,13 @@
         <div>
             <h2 data-anime="bottom">{ Skills };</h2>
         </div>
-        <div class="sPai" data-anime="bottom">
-            <div class="sFilho1 justify-content-center">
+        <div class="sFather" data-anime="bottom">
+            <div class="sSon1 justify-content-center">
                 <div>HTML</div>
                 <div>CSS</div>
                 <div>Javascript</div>
             </div>
-            <div class="sFilho2 justify-content-center">
+            <div class="sSon2 justify-content-center">
                 <div>Git</div>
                 <div>React</div>
                 <div>Vue</div>
@@ -185,7 +196,7 @@
 
     <section id="workExperience">
         <h2 data-anime="right">{ Work Experience };</h2>
-        <div data-anime="right" class="card-group tPai">
+        <div data-anime="right" class="card-group tFather">
             <div class="card row-md-3 row-sm-6 row-xs-12">
                 <div class="card-body">
                     <h3 class="card-title font-weight-bold">SEAC - Banese Card</h3>
@@ -224,7 +235,7 @@
         <div class="container">
             <div class="main-timeline">
 
-                <!-- start experience section-->
+                <!-- start experience section -->
                 <div class="timeline">
                     <div class="icon"></div>
                     <div class="date-content">
@@ -246,9 +257,9 @@
                         </p>
                     </div>
                 </div>
-                <!-- end experience section-->
+                <!-- end experience section -->
 
-                <!-- start experience section-->
+                <!-- start experience section -->
                 <div class="timeline">
                     <div class="icon"></div>
                     <div class="date-content">
@@ -269,9 +280,9 @@
                         </p>
                     </div>
                 </div>
-                <!-- end experience section-->
+                <!-- end experience section -->
 
-                <!-- start experience section-->
+                <!-- start experience section -->
                 <div class="timeline">
                     <div class="icon"></div>
                     <div class="date-content">
@@ -291,9 +302,9 @@
                         </p>
                     </div>
                 </div>
-                <!-- end experience section-->
+                <!-- end experience section -->
 
-                <!-- start experience section-->
+                <!-- start experience section -->
                 <div class="timeline">
                     <div class="icon"></div>
                     <div class="date-content">
@@ -322,9 +333,9 @@
                         </p>
                     </div>
                 </div>
-                <!-- end experience section-->
+                <!-- end experience section -->
 
-                <!-- start experience section-->
+                <!-- start experience section -->
                 <div class="timeline">
                     <div class="icon"></div>
                     <div class="date-content">
@@ -344,9 +355,9 @@
                         </p>
                     </div>
                 </div>
-                <!-- end experience section-->
+                <!-- end experience section -->
 
-                <!-- start experience section-->
+                <!-- start experience section -->
                 <div class="timeline">
                     <div class="icon"></div>
                     <div class="date-content">
@@ -367,9 +378,9 @@
                         </p>
                     </div>
                 </div>
-                <!-- end experience section-->
+                <!-- end experience section -->
 
-                <!-- start experience section-->
+                <!-- start experience section -->
                 <div class="timeline">
                     <div class="icon"></div>
                     <div class="date-content">
@@ -390,7 +401,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- end experience section-->
+                <!-- end experience section -->
 
             </div>
         </div>
@@ -443,8 +454,7 @@
                             <input type="text" class="email" name="phone" placeholder="EMAIL" required /><br />
                             <textarea <input type="text" class="msg" name="text" placeholder="MESSAGE"
                                 required></textarea>
-                            <button type="button" class="btn font-weight-bold text-secondary bg-secondary"
-                                data-toggle="modal" data-target="#exampleModal">SEND MESSAGE</button>
+                            <button type="button" class="btn" formBtn data-toggle="modal" data-target="#exampleModal">SEND MESSAGE</button>
                         </form>
                     </div>
                 </div>
@@ -469,7 +479,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">AVISO:</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span class="text-danger" aria-hidden="true">X</span>
+                        <span aria-hidden="true">X</span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -479,7 +489,7 @@
                         WhatsApp <span class="text-light">+55 (79) 99920-8615</span>.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn font-weight-bold bg-secondary" data-dismiss="modal">CLOSE</button>
+                    <button type="button" formBtn class="btn" data-dismiss="modal">CLOSE</button>
                 </div>
             </div>
         </div>
