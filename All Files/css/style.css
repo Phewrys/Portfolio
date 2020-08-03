@@ -13,7 +13,7 @@
     margin: 0;
     border: 0;
     background: transparent;
-    font-family: 'Roboto Mono', cursive;
+    font-family: 'Roboto Mono', sans-serif;
     line-height: 1.5;
 }
 
@@ -135,20 +135,21 @@ section#header a {
 
 #button {
     margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 [menuShow] {
     margin-top: 0;
-    color: #00fff3;
-    border: 5px solid transparent;
+    border: 5px solid #1b1b1b;
+    background-color: #1b1b1b;
 }
 
 [menuShow] > ul > li > a {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 [menuShow] > ul > li > a:hover {
-    transform: scale(1.2);
+    transform: scale(1.04);
 }
 
 section#header li a {
@@ -226,7 +227,7 @@ section.home i {
 
 }
 
-/***** Animation *****/
+/***** Animation write *****/
 .anim-typewriter {
     animation: typewriter 5s steps(22) 500ms infinite,
     blinkTextCursor 500ms steps(22) infinite normal;
@@ -311,7 +312,7 @@ svg {
     transition: 1s ease-in-out;
     width: 160px;
 }
-  
+ 
 [btn]:hover {
     transition: 1s ease-in-out;
     transform: scale(1.2);
@@ -675,10 +676,10 @@ footer h4 {
 
 }
 
-/* Animation-Scroll */
+/* Animar ao Scroll com JavaScript Puro - animation-Scroll.js */
 [data-anime] {
     opacity: 0;
-    transition: 2.2s;
+    transition: 0.3s;
 }
 
 [data-anime="header-left"] {
@@ -706,16 +707,17 @@ footer h4 {
     transform: translate3d(0px, 0px, 0px);
 }
 
+/* Como animar ao Scroll com jQuery - animation-Scroll.js */
 .anime-left {
     opacity: 0;
     transform: translate3d(-50px, 0, 0);
-    transition: 1.2s;
+    transition: 0.5s;
 }
 
 .anime-right {
     opacity: 0;
     transform: translate3d(50px, 0, 0);
-    transition: 1.2s;
+    transition: 0.5s;
 }
 
 .anime-start {
