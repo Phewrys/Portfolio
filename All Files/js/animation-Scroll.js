@@ -1,4 +1,4 @@
-// Usada nos dois métodos. Serve para segurar um pouco o excesso de chamadas da função, evitando uma má performance.
+// It serves to decrease the number of times the function is called, avoiding poor performance.
 const debounce = function (func, wait, immediate) {
     let timeout;
     return function (...args) {
@@ -12,10 +12,10 @@ const debounce = function (func, wait, immediate) {
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(context, args);
     };
-}; // Fim Debounce
+};
 
 
-// Animar ao Scroll com JavaScript Puro
+// Animation Scroll - JavaScript
 // https://www.youtube.com/watch?v=pKTOT63X9XQ&list=LLNSJDO4FhPCoC8_341tbGmg&index=24&t=2s
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
@@ -40,9 +40,7 @@ if (target.length) {
 }
 
 
-// Animation Voluntary
-
-// Como animar ao Scroll com jQuery
+// Animation Scroll Voluntary - jQuery
 // https://www.youtube.com/watch?v=e3NhP1nt-lY&list=LLNSJDO4FhPCoC8_341tbGmg&index=23&t=0s
 (function () { // LEFT
     var $targetx = $('.anime-left'),

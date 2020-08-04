@@ -1,4 +1,3 @@
-// Scroll Suave para Link Interno - JavaScript Puro
 // https://www.youtube.com/watch?v=tzbpAqb2Wjc&list=LLNSJDO4FhPCoC8_341tbGmg&index=135&t=7s
 
 
@@ -23,7 +22,7 @@ function scrollToIdOnClick(event) {
 */
 
 
-// Method 2 - Com funções separadas
+// Method 2 - With separate functions
 const menuItems = document.querySelectorAll('.menu a[href^="#"]');
 
 menuItems.forEach(item => {
@@ -42,17 +41,17 @@ function scrollToIdOnClick(event) {
 }
 
 function scrollToPosition(to) {
-/* Funciona apenas em alguns browsers
+/* Works only on some browsers
   window.scroll({
     top: to,
     behavior: "smooth",
   });
 */
-  smoothScrollTo(0, to); // Funciona em todos os browsers
+  smoothScrollTo(0, to); // Works on all browsers
 }
 
 
-// PERMITE QUE O SCROLL FUNCIONE EM TODOS OS BROWSERS
+// ALLOWS SCROLL TO WORK ON ALL BROWSERS
 /**
  * Smooth scroll animation
  * @param {int} endX: destination x coordinate
